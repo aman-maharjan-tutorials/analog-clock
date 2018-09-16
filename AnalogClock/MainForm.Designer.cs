@@ -28,34 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.analogClockControl1 = new AnalogClockControl.AnalogClockControl();
             this.SuspendLayout();
             // 
-            // timer
+            // analogClockControl1
             // 
-            this.timer.Interval = 1000;
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            this.analogClockControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.analogClockControl1.Location = new System.Drawing.Point(12, 12);
+            this.analogClockControl1.Name = "analogClockControl1";
+            this.analogClockControl1.Size = new System.Drawing.Size(386, 266);
+            this.analogClockControl1.TabIndex = 0;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(486, 290);
+            this.ClientSize = new System.Drawing.Size(410, 290);
+            this.Controls.Add(this.analogClockControl1);
             this.DoubleBuffered = true;
             this.Name = "MainForm";
             this.Text = "Drawing Demo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.MainForm_Load);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.MainForm_Paint);
-            this.Resize += new System.EventHandler(this.MainForm_Resize);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Timer timer;
+        private AnalogClockControl.AnalogClockControl analogClockControl1;
     }
 }
 
