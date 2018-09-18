@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
 namespace AnalogClock
 {
@@ -36,6 +37,7 @@ namespace AnalogClock
             object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
            
             int faceRadius = Math.Min(
                 ClientSize.Height,
