@@ -152,6 +152,7 @@ namespace AnalogClockControl
                 r, theta);
         }
 
+        public string TimeZone { get; set; }
 
     }
 }
