@@ -29,24 +29,31 @@
         private void InitializeComponent()
         {
             this.analogClockControl1 = new AnalogClockControl.AnalogClockControl();
+            this.analogClockControl2 = new AnalogClockControl.AnalogClockControl();
             this.SuspendLayout();
             // 
             // analogClockControl1
             // 
-            this.analogClockControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.analogClockControl1.Location = new System.Drawing.Point(12, 12);
             this.analogClockControl1.Name = "analogClockControl1";
-            this.analogClockControl1.Size = new System.Drawing.Size(386, 266);
+            this.analogClockControl1.Size = new System.Drawing.Size(243, 248);
             this.analogClockControl1.TabIndex = 0;
             this.analogClockControl1.TimeZone = "Sydney";
+            // 
+            // analogClockControl2
+            // 
+            this.analogClockControl2.Location = new System.Drawing.Point(261, 12);
+            this.analogClockControl2.Name = "analogClockControl2";
+            this.analogClockControl2.Size = new System.Drawing.Size(243, 248);
+            this.analogClockControl2.TabIndex = 1;
+            this.analogClockControl2.TimeZone = "GMT";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(410, 290);
+            this.ClientSize = new System.Drawing.Size(514, 277);
+            this.Controls.Add(this.analogClockControl2);
             this.Controls.Add(this.analogClockControl1);
             this.DoubleBuffered = true;
             this.Name = "MainForm";
@@ -59,6 +66,7 @@
         #endregion
 
         private AnalogClockControl.AnalogClockControl analogClockControl1;
+        private AnalogClockControl.AnalogClockControl analogClockControl2;
     }
 }
 
