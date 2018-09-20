@@ -40,6 +40,7 @@
             this.analogClockControl1.Name = "analogClockControl1";
             this.analogClockControl1.Size = new System.Drawing.Size(386, 266);
             this.analogClockControl1.TabIndex = 0;
+            this.analogClockControl1.TimeZone = "Sydney";
             // 
             // MainForm
             // 
